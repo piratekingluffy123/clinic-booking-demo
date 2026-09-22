@@ -609,7 +609,7 @@
   // it as timed out. Now that the backend cache is kept genuinely warm
   // (see Code.gs), cold/slow availability lookups should be rare, so this
   // no longer needs to budget for a worst-case cold start on every try.
-  const REQUEST_TIMEOUT_MS = 8000;
+  const REQUEST_TIMEOUT_MS = 15000;
 
   // How many times to automatically retry a failed/timed-out availability
   // check before giving up and showing an error (instead of ever pretending
